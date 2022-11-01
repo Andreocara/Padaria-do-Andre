@@ -4,7 +4,7 @@
 
 $destinatario = "luis.camargo.andre@escola.pr.gov.br";
 
-$nome = $_REQUEST['nome'];
+$nomesobr = $_REQUEST['nome'];
 $email = $_REQUEST['email'];
 $mensagem = $_REQUEST['mensagem'];
 $assunto = $_REQUEST['assunto'];
@@ -21,9 +21,6 @@ $body = $body . "===================================" . "\n";
 
 // envia o email
 mail($destinatario, $assunto , $body, "From: $email\r\n");
-
-// redireciona para a página de obrigado
-header("location:obrigado.htm");
 
 
 ?>
